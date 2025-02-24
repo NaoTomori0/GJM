@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bua40c1ynaii2"]
+
+[ext_resource type="Script" path="res://scenes/SCRIPTS/parallax_background.gd" id="1_15lpv"]
+[ext_resource type="Texture2D" uid="uid://dhn8skhv4ldph" path="res://assets/aseticbeluyi.png" id="2_yrl0n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4a8ma"]
+atlas = ExtResource("2_yrl0n")
+region = Rect2(32.0199, 0.796381, 31.9753, 31.2141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vtj8"]
+atlas = ExtResource("2_yrl0n")
+region = Rect2(0.760107, 0.889791, 30.9792, 30.9982)
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = ExtResource("1_15lpv")
+
+[node name="BLayer2" type="ParallaxLayer" parent="."]
+visible = false
+motion_mirroring = Vector2(1200, 0)
+
+[node name="blackmod" type="Sprite2D" parent="BLayer2"]
+position = Vector2(585.578, 324.898)
+scale = Vector2(39.3615, 22.3936)
+texture = SubResource("AtlasTexture_4a8ma")
+
+[node name="Wlayer2" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1200, 0)
+
+[node name="whitemod" type="Sprite2D" parent="Wlayer2"]
+position = Vector2(592, 332)
+scale = Vector2(40.5333, 23.2)
+texture = SubResource("AtlasTexture_2vtj8")

@@ -1,0 +1,267 @@
+[gd_scene load_steps=11 format=3 uid="uid://byti2fn1xbmt"]
+
+[ext_resource type="Texture2D" uid="uid://dhn8skhv4ldph" path="res://assets/aseticbeluyi.png" id="1_afmhl"]
+[ext_resource type="Script" path="res://scenes/SCRIPTS/chapter_menu.gd" id="1_x85jh"]
+[ext_resource type="Texture2D" uid="uid://8suo3qdl0bey" path="res://assets/FREE - Ultimate UI PixelArt Icons/UI ICONS_BLACK_pixel art_Sprite Sheet.png" id="3_liqfb"]
+[ext_resource type="FontFile" uid="uid://dswiwcuthdy67" path="res://font/Ordinary Notes Thin.otf" id="3_s3b6t"]
+[ext_resource type="FontFile" uid="uid://dchebskj8yucm" path="res://font/Perfect DOS VGA 437 Win.ttf" id="4_dqbdk"]
+[ext_resource type="Texture2D" uid="uid://1mt1fc6x6cbl" path="res://assets/FREE - Ultimate UI PixelArt Icons/UI ICONS_WHITE_pixel art_Sprite Sheet.png" id="6_jehvi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5n1u"]
+atlas = ExtResource("1_afmhl")
+region = Rect2(0, 0, 30.7127, 31.3916)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qv7xm"]
+atlas = ExtResource("3_liqfb")
+region = Rect2(796.418, 543.77, 64.7492, 64.2097)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ht7il"]
+atlas = ExtResource("3_liqfb")
+region = Rect2(181, 428, 23, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdxy3"]
+atlas = ExtResource("6_jehvi")
+region = Rect2(772, 900, 120, 120)
+
+[node name="CHAPTER_menu" type="Node2D"]
+script = ExtResource("1_x85jh")
+
+[node name="Aseticbeluyi" type="Sprite2D" parent="."]
+position = Vector2(585.578, 324.898)
+scale = Vector2(39.3615, 22.3936)
+texture = SubResource("AtlasTexture_h5n1u")
+
+[node name="Label2" type="Label" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Label" type="Label" parent="Label2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -324.0
+offset_right = 97.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Label2/Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -220.0
+offset_right = 105.0
+offset_bottom = -180.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_s3b6t")
+theme_override_font_sizes/font_size = 25
+text = "CHAPTER I"
+
+[node name="Button2" type="Button" parent="Label2/Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -140.0
+offset_right = 105.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_s3b6t")
+theme_override_font_sizes/font_size = 25
+text = "CHAPTER II"
+
+[node name="Button3" type="Button" parent="Label2/Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -60.0
+offset_right = 105.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_s3b6t")
+theme_override_font_sizes/font_size = 25
+text = "CHAPTER III"
+
+[node name="Button4" type="Button" parent="Label2/Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = 20.0
+offset_right = 105.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_s3b6t")
+theme_override_font_sizes/font_size = 25
+text = "CHAPTER IV"
+
+[node name="Button5" type="Button" parent="Label2/Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = 100.0
+offset_right = 105.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_s3b6t")
+theme_override_font_sizes/font_size = 25
+text = "CHAPTER V"
+
+[node name="Button6" type="Button" parent="Label2/Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = 180.0
+offset_right = 105.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_s3b6t")
+theme_override_font_sizes/font_size = 25
+text = "CHAPTER VI"
+
+[node name="Button7" type="Button" parent="Label2/Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 320.0
+offset_top = 244.0
+offset_right = 521.0
+offset_bottom = 284.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_dqbdk")
+theme_override_font_sizes/font_size = 25
+text = "PLAY
+"
+
+[node name="Label2" type="Label" parent="Label2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="UiIconsBlackPixelArtSpriteSheet5" type="Sprite2D" parent="Label2/Label2"]
+visible = false
+position = Vector2(744, 440)
+scale = Vector2(0.625, 0.625)
+texture = SubResource("AtlasTexture_qv7xm")
+
+[node name="UiIconsBlackPixelArtSpriteSheet" type="Sprite2D" parent="Label2/Label2"]
+visible = false
+position = Vector2(744, 120)
+scale = Vector2(0.625, 0.625)
+texture = SubResource("AtlasTexture_qv7xm")
+
+[node name="UiIconsBlackPixelArtSpriteSheet2" type="Sprite2D" parent="Label2/Label2"]
+visible = false
+position = Vector2(744, 200)
+scale = Vector2(0.625, 0.625)
+texture = SubResource("AtlasTexture_qv7xm")
+
+[node name="UiIconsBlackPixelArtSpriteSheet4" type="Sprite2D" parent="Label2/Label2"]
+visible = false
+position = Vector2(744, 360)
+scale = Vector2(0.625, 0.625)
+texture = SubResource("AtlasTexture_qv7xm")
+
+[node name="UiIconsBlackPixelArtSpriteSheet6" type="Sprite2D" parent="Label2/Label2"]
+visible = false
+position = Vector2(744, 520)
+scale = Vector2(0.625, 0.625)
+texture = SubResource("AtlasTexture_qv7xm")
+
+[node name="UiIconsBlackPixelArtSpriteSheet3" type="Sprite2D" parent="Label2/Label2"]
+visible = false
+position = Vector2(744, 280)
+scale = Vector2(0.625, 0.625)
+texture = SubResource("AtlasTexture_qv7xm")
+
+[node name="Label3" type="Label" parent="Label2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="UiIconsBlackPixelArtSpriteSheet" type="Sprite2D" parent="Label2/Label3"]
+visible = false
+position = Vector2(432, 120)
+texture = SubResource("AtlasTexture_ht7il")
+
+[node name="UiIconsBlackPixelArtSpriteSheet2" type="Sprite2D" parent="Label2/Label3"]
+visible = false
+position = Vector2(432, 200)
+texture = SubResource("AtlasTexture_ht7il")
+
+[node name="UiIconsBlackPixelArtSpriteSheet3" type="Sprite2D" parent="Label2/Label3"]
+visible = false
+position = Vector2(432, 280)
+texture = SubResource("AtlasTexture_ht7il")
+
+[node name="UiIconsBlackPixelArtSpriteSheet4" type="Sprite2D" parent="Label2/Label3"]
+visible = false
+position = Vector2(432, 360)
+texture = SubResource("AtlasTexture_ht7il")
+
+[node name="UiIconsBlackPixelArtSpriteSheet5" type="Sprite2D" parent="Label2/Label3"]
+visible = false
+position = Vector2(432, 440)
+texture = SubResource("AtlasTexture_ht7il")
+
+[node name="UiIconsBlackPixelArtSpriteSheet6" type="Sprite2D" parent="Label2/Label3"]
+visible = false
+position = Vector2(432, 520)
+texture = SubResource("AtlasTexture_ht7il")
+
+[node name="mutooooon" type="Button" parent="Label2"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 552.0
+offset_right = 104.0
+offset_bottom = 616.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Label2/mutooooon"]
+position = Vector2(32, 32)
+scale = Vector2(0.483333, 0.483333)
+texture = SubResource("AtlasTexture_rdxy3")
+
+[connection signal="pressed" from="Label2/Label/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Label2/Label/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Label2/Label/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Label2/Label/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Label2/Label/Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Label2/Label/Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Label2/Label/Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="Label2/mutooooon" to="." method="_on_mutooooon_pressed"]

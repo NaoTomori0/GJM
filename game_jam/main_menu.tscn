@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://chd0y3pryt04p"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_vfu48"]
+[ext_resource type="Texture2D" uid="uid://dt6q4vnpnxs7t" path="res://BACKGROUND_FOREST/PREVIEW.png" id="2_nfmb0"]
+[ext_resource type="FontFile" uid="uid://cuuslbobwo2an" path="res://font/Perfect DOS VGA 437.ttf" id="3_wwwic"]
+[ext_resource type="Texture2D" uid="uid://1mt1fc6x6cbl" path="res://assets/FREE - Ultimate UI PixelArt Icons/UI ICONS_WHITE_pixel art_Sprite Sheet.png" id="4_evfcy"]
+[ext_resource type="FontFile" uid="uid://dswiwcuthdy67" path="res://font/Ordinary Notes Thin.otf" id="4_y85ku"]
+[ext_resource type="PackedScene" uid="uid://dit0v4q4vjh47" path="res://scenes/info.tscn" id="6_ylamd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqupl"]
+atlas = ExtResource("4_evfcy")
+region = Rect2(387, 895, 122, 125)
+
+[node name="main_menu" type="Node2D"]
+script = ExtResource("1_vfu48")
+
+[node name="Preview" type="Sprite2D" parent="."]
+position = Vector2(576, 326.5)
+scale = Vector2(0.707466, 0.608333)
+texture = ExtResource("2_nfmb0")
+
+[node name="Label" type="Label" parent="."]
+offset_top = 1.0
+offset_right = 1152.0
+offset_bottom = 652.0
+size_flags_horizontal = 4
+
+[node name="play" type="Button" parent="Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -141.0
+offset_top = -3.5
+offset_right = 142.0
+offset_bottom = 67.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("3_wwwic")
+theme_override_font_sizes/font_size = 41
+text = "PLAY
+"
+
+[node name="quit" type="Button" parent="Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = 227.5
+offset_right = -478.0
+offset_bottom = 288.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("3_wwwic")
+theme_override_font_sizes/font_size = 41
+flat = true
+icon_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Label/quit"]
+position = Vector2(30, 30)
+scale = Vector2(0.52459, 0.52459)
+texture = SubResource("AtlasTexture_xqupl")
+
+[node name="game name" type="Label" parent="Label"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -313.0
+offset_top = 69.0
+offset_right = 314.0
+offset_bottom = 317.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_y85ku")
+theme_override_font_sizes/font_size = 62
+text = "   LOST   |  MEMORY
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="info" parent="." instance=ExtResource("6_ylamd")]
+
+[connection signal="pressed" from="Label/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Label/quit" to="." method="_on_quit_pressed"]

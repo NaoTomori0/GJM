@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpppaysail5y7"]
+
+[ext_resource type="AudioStream" uid="uid://jhqch6l55cpp" path="res://Main_Theme2.mp3" id="1_rn303"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_rn303")
+volume_db = -20.0
+autoplay = true
